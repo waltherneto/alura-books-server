@@ -1,0 +1,27 @@
+{
+  "name": "alura-books-server",
+  "version": "1.0.0",
+  "description": "- Aprenda a criar uma API Node.js usando Express;\r - Entenda como funcionam requisições HTTP;\r - Compreenda como testar e validar uma API manualmente;\r - Aprenda a manipular arquivos JSON para armazenar dados;\r - Saiba como lidar com erros na sua aplicação;\r - Conheça os mais utilizados métodos HTTP;",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waltherneto/alura-books-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waltherneto/alura-books-server/issues"
+  },
+  "homepage": "https://github.com/waltherneto/alura-books-server#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
