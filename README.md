@@ -21,7 +21,7 @@ Maneira divertida de entender os [HTTP Statuses](https://httpstatusdogs.com/)
 [Postman](https://www.postman.com/)
 
 ## Documentações
--
+Sobre [HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
 
 ## Cursos adicionais
 -

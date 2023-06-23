@@ -3,6 +3,7 @@ const bookRoutes = require('./routes/Book.js')
 
 const app = express()
 
+app.use(express.json())
 app.use('/books', bookRoutes)
 
 const port = 8000
