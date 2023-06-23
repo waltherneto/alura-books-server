@@ -12,6 +12,7 @@
 
 ## Artigos
 [HTTP: Desmistificando o protocolo da web](https://www.alura.com.br/artigos/desmistificando-o-protocolo-http-parte-1)
+Sobre [o que é um banco de dados, afinal?](https://medium.com/sysadminas/banco-de-dados-af36571670ee#:~:text=Os%20tipos%20de%20bancos%20de,conhecido%2C%20com%20colunas%20e%20linhas)
 
 ## Links Úteis
 Maneira divertida de entender os [HTTP Statuses](https://httpstatusdogs.com/)
