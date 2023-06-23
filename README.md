@@ -9,6 +9,7 @@
 ## Bibliotecas Utilizadas
 [Express](https://expressjs.com/pt-br/)
 [Nodemon](https://nodemon.io/)
+[Cors](https://www.npmjs.com/package/cors)
 
 ## Artigos
 [HTTP: Desmistificando o protocolo da web](https://www.alura.com.br/artigos/desmistificando-o-protocolo-http-parte-1)
