@@ -22,6 +22,7 @@ Maneira divertida de entender os [HTTP Statuses](https://httpstatusdogs.com/)
 
 ## Documentações
 Sobre [HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
+Sobre [Códigos de resposta HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 
 ## Cursos adicionais
 -

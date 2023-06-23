@@ -6,18 +6,25 @@ function getBooks(_, res) {
     const books = getAllBooks()
     res.send(books);
   } catch (error) {
-    res.status(500);
+    res.status(500)
     res.send(error.message)
   }
 }
 
 function getOneBook(req, res) {
   try {
-    const id = req.params.id
-    const bookByID = getBookByID(id)
-    res.send(bookByID);
+    const bookID = req.params.id
+
+    if(bookID && Number(bookID)) {
+      const bookByID = getBookByID(bookID)
+      res.send(bookByID)
+    } else {
+      res.status(422)
+      res.send(`ID inválido`)      
+    }
+
   } catch (error) {
-    res.status(500);
+    res.status(500)
     res.send(error.message)
   }
 }
@@ -25,12 +32,17 @@ function getOneBook(req, res) {
 function createBook(req, res) {
   try {
     const newData = req.body
-    const addedBook = postBook(newData);
 
-    res.status(201);
-    res.send(`Livro criado com sucesso!`);
+    if(req.body.name) {
+      postBook(newData)
+      res.status(201);
+      res.send(`Livro criado com sucesso!`)
+    } else {
+      res.status(422)
+      res.send(`O campo Name é obrigatório!`)
+    }
   } catch (error) {
-    res.status(500);
+    res.status(500)
     res.send(error.message)
   }
 }
@@ -39,12 +51,17 @@ function updateBook(req, res) {
   try {
     const bookID = req.params.id
     const newContent = req.body
-    const returnBook = modifyBook(newContent, bookID);
 
-    res.status(200);
-    res.send(`O livro foi modificado com sucesso!`);
+    if(bookID && Number(bookID)) {
+      modifyBook(newContent, bookID)
+      res.status(200)
+      res.send(`O livro foi modificado com sucesso!`)
+    } else {
+      res.status(422)
+      res.send(`ID inválido`)
+    }
   } catch(error) {
-    res.status(500);
+    res.status(500)
     res.send(error.message)
   }
 }
@@ -52,17 +69,20 @@ function updateBook(req, res) {
 function removeBook(req, res) {
   try {
     const bookID = req.params.id
-    deleteBook(bookID);
 
-    res.status(200);
-    res.send(`O livro foi removido com sucesso!`);
+    if(bookID && Number(bookID)) {
+      deleteBook(bookID)
+      res.status(200)
+      res.send(`O livro foi removido com sucesso!`)
+    } else {
+      res.status(422)
+      res.send(`ID inválido`)
+    }
   } catch(error) {
-    res.status(500);
+    res.status(500)
     res.send(error.message)
   }
 }
-
-
 
 module.exports = {
   getBooks,
